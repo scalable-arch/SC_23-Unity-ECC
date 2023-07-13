@@ -10,9 +10,9 @@
 (2) 코드 실행법 : python run.py
 
 결과물 (여기에서는 result/~.txt 이다.)
--> IPC(cpu instruction number/cpu cycle number), read/write request# 등등
--> cmd (RD/WR/PR)
--> DRAMPower를 재려면 생성되는 cmd~.txt 파일을 DRAMPower 내부 폴더로 옮겨서 진행하자!!!!!!
+- IPC(cpu instruction number/cpu cycle number), read/write request# 등등
+- cmd (RD/WR/PR)
+- DRAMPower를 재려면 생성되는 cmd~.txt 파일을 DRAMPower 내부 폴더로 옮겨서 진행하자!!!!!!
  ex) cmd-trace-astar-chan-0-rank.txt
 
 주의사항!!!! => cfg 파일에서 Cache 구성 (L1L2, L3..) , warmup_instr 등은 잘 생각해보고 조절해서 돌리기!
