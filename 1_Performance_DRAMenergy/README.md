@@ -1,0 +1,2 @@
+- I'm not uploaded Multi-core code (Gem5 + Ramulator)
+- It has too large sizes (14GB...)
