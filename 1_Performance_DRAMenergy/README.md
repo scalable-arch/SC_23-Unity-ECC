@@ -28,9 +28,11 @@
 - ext/ramulator/Ramulator/src/DDR4.h 수정
 - scons ./build/X86/gem5.opt -j 20
 
+
 - DDR4 config 수정
 - script/ramulator_config/DDR4.cfg
 - script/gem5_multicore/DDR4_1GB_GEM5_Multicore_backup.cfg
+
 
 - script 실행
 - python gem5.py -f gem5_multicore/DDR4_1GB_GEM5_Multicore.cfg
