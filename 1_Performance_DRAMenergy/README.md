@@ -21,18 +21,22 @@
 
 # Getting started
 - !!!!!주의!! 일단 첫번째로 다음 경로의 압축을 폴어야 함.
- (1) benchspec/CPU2006에 있는 파일들의 압축을 풀어야 한다 (run.py에 있는 모양대로 나옴!)
+(1) benchspec/CPU2006에 있는 파일들의 압축을 풀어야 한다 (run.py에 있는 모양대로 나옴!)
+
+(2) build
 
 - gem5_ramulator
 - gem5_v20.1_ramulator
 - ext/ramulator/Ramulator/src/DDR4.h 수정
 - scons ./build/X86/gem5.opt -j 20
 
+(3) DRAM config
 
 - DDR4 config 수정
 - script/ramulator_config/DDR4.cfg
 - script/gem5_multicore/DDR4_1GB_GEM5_Multicore_backup.cfg
 
+(4) script 실행
 
 - script 실행
 - python gem5.py -f gem5_multicore/DDR4_1GB_GEM5_Multicore.cfg
