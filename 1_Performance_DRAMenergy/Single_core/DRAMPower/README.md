@@ -1,4 +1,4 @@
-# DRAM Power Model (DRAMPower)
+# DRAM Power Model (DRAMPower, Figure 7)
 
 -(1) Timing parameter 변경 & 컴파일 : memspec/~.xml 해당 파일 수정 후 make clean, make -j4
 - 코드 수정해도 compile 돌리기!!
