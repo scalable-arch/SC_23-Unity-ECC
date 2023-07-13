@@ -1,4 +1,11 @@
 # DRAM Power Model (DRAMPower)
+
+-(1) Timing parameter 변경 & 컴파일 : memspec/~.xml 해당 파일 수정 후 make clean, make -j4
+- 코드 수정해도 compile 돌리기!!
+(2) 코드 실행법 : python run.py
+- 해당 예시에서는 Ramulator 에서 나온 cmd~.txt 파일들을 DRAMPower/result/Dongwhee/DDR4_16Gb_x4_4800 폴더로 옮기면 된다. 이거 위치를 
+ 바꾸면, DRAMPower에 있는 run.py 파일을 수정하고 실행하면 된다.
+
 [![Build Status](https://travis-ci.org/ravenrd/DRAMPower.svg?branch=master)](https://travis-ci.org/ravenrd/DRAMPower)
 [![Coverage Status](https://coveralls.io/repos/ravenrd/DRAMPower/badge.png?branch=master)](https://coveralls.io/r/ravenrd/DRAMPower?branch=master)
 ## 0. Releases
