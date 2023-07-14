@@ -8,8 +8,7 @@
 - 2. Setting output function name: output.S file.
 - 3. **(Start loop)** DDR5 ECC-DIMM setup
 - 4. Initialize all data in 10 chips to 0: Each chip has 136 bits of data + redundancy.
-- 5. Error injection: Errors occur based on the following probabilities:
->> SE: 40%, DE: 30%, SCE: 14%, SE+SE: 16%
+- 5. Error injection: Errors occur based on the error scenarios. **(Caution!) This evaluation has no fault!**
 - 6. Apply OD-ECC: Implementation
 >> Apply the Hamming SEC code of (136, 128) to each chip.
 
