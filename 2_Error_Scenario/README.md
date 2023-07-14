@@ -33,8 +33,8 @@
 - Num of DQ: 4 (x4 chip)
 
 # ECC configuration
-- OD-ECC: No OD-ECC/(136, 128) Hamming SEC code **[1]**
-- RL-ECC: No RL-ECC/[10, 8] Chipkill (using Reed-Solomon code)/[10, 8] Unity ECC
+- OD-ECC: No OD-ECC, (136, 128) Hamming SEC code **[1]**
+- RL-ECC: No RL-ECC, [10, 8] Chipkill (using Reed-Solomon code), [10, 8] Unity ECC
 
 # Error pattern configuration
 - SE(SBE): per-chip Single Bit Error
