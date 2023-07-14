@@ -1,7 +1,7 @@
 # Error_Scenario (Table 4)
 
 # Overview
-![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/02_DDR5_ODECC_RLECC/DDR5%20OD-ECC%20%26%20RL-ECC.png)
+![An Overview of the evaluation](https://github.com/xyz123479/SC_23_Unity-ECC/blob/main/2_Error_Scenario/DDR5%20OD-ECC%20%26%20RL-ECC.png)
 
 # Code flows (Fault_sim.cpp)
 - 1. Reading OD-ECC, RL-ECC H-Matrix.txt: It's fine not to use RL-ECC H-Matrix.txt.
@@ -33,9 +33,8 @@
 - Num of DQ: 4 (x4 chip)
 
 # ECC configuration
-- OD-ECC: (136, 128) Hamming SEC code **[1]**
-- RL-ECC: (80,64) ECC **(configure freely)**
->> Ex) CRC (Cyclic Redundancy Check) code, BCH (Bose–Chaudhuri–Hocquenghem) code, RS (Reed-Solomon) code, Unity ECC (SC'23) **[5]** 
+- OD-ECC: No OD-ECC/(136, 128) Hamming SEC code **[1]**
+- RL-ECC: No RL-ECC/[10, 8] Chipkill (using Reed-Solomon code)/[10, 8] Unity ECC
 
 # Error pattern configuration
 - SE(SBE): per-chip Single Bit Error
