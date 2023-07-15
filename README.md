@@ -15,7 +15,7 @@ Paper URL: **(to be updated later)**
 
 # 1_Performance_DRAMenergy
 - Figure 7
-- Figure 8 (Multi-core) is not uploaded! (to large size! 3GB)
+- **Figure 8** (Multi-core) is **not uploaded!** (to large size! 3GB)
 
 # 2_Error_Scenario
 - Table 4
