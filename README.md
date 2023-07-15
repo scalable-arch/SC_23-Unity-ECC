@@ -12,3 +12,9 @@ Paper URL: **(to be updated later)**
 
 # Overview
 ![A comparison of conventional and Unity ECC](https://github.com/xyz123479/SC_23_Unity-ECC/blob/main/Unity%20ECC.png)
+
+# 1_Reliability
+- Table 3
+
+# 2_Hardware_overheads
+- Table 4
