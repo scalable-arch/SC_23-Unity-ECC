@@ -4,10 +4,10 @@
 ![An Overview of the evaluation](https://github.com/xyz123479/SC_23_Unity-ECC/blob/main/2_Error_Scenario/DDR5%20OD-ECC%20%26%20RL-ECC.png)
 
 # Code flows (Fault_sim.cpp)
-- 1. Reading OD-ECC, RL-ECC H-Matrix.txt: It's fine not to use RL-ECC H-Matrix.txt.
-- 2. Setting output function name: output.S file.
+- 1. Reading H-Matrix.txt (OD-ECC)
+- 2. Setting output function name: ~.S files
 - 3. **(Start loop)** DDR5 ECC-DIMM setup
-- 4. Initialize all data in 10 chips to 0: Each chip has 136 bits of data + redundancy.
+- 4. Initialize all data in 10 chips to 0: Each chip has 136 bits of data (128-bit) + redundancy (8-bit).
 - 5. Error injection: Errors occur based on the error scenarios. **(Caution!) This evaluation has no fault!**
 - 6. Apply OD-ECC: Implementation
 >> Apply the Hamming SEC code of (136, 128) to each chip.
@@ -15,12 +15,14 @@
 >> After running OD-ECC, the redundancy of OD-ECC does not come out of the chip (128-bit data).
 - 7. Apply RL-ECC
 >> Run (80, 64) RL-ECC by bundling two beats.
->> Please feel free to use any ECC code.
->> 16 Burst Length (BL) creates one memory transfer block (64B cacheline + 16B redundancy).
->> In DDR5 x4 DRAM, because of internal prefetching, only 64bit of data from each chip's 128bit data is actually transferred to the cache.
->> For this, create two memory transfer blocks for 128-bit data and compare them.
-- 8. Report CE/DUE/SDC results.
-- 9. **(End loop)** Derive final results.
+
+>> 16 Burst Length (BL) creates one memory transfer block (64B cacheline + 16B redundancy)
+
+>> In DDR5 x4 DRAM, because of internal prefetching, only 64bit of data from each chip's 128bit data is actually transferred to the cache
+
+>> For this, create two memory transfer blocks for 128-bit data and compare them (choose worst one)
+- 8. Report CE/DUE/SDC results
+- 9. **(End loop)** Derive final results
 
 # DIMM configuration (per-sub channel)
 - DDR5 ECC-DIMM
@@ -45,13 +47,6 @@
 - DE(DBE): Among 10 chips, there's a double bit error (DE[Double Bit Error]) occurring in just one chip, with the remaining 9 chips having no errors
 - CHIPKILL(SCE): Among 10 chips, there's a random error (SCE [Single Chip Error]) occurring in just one chip, with the remaining 9 chips having no errors. Errors can occur up to a maximum of 136 bits
 - SE(SBE)+SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in each of two chips, with the remaining 8 chips having no errors
-
-# To do
-- Fill in the **error_correction_oecc, error_correction_recc** function
-- You just need to fill in 2 parts labeled "Fill your code here!!"
-- Function input: codeword (136bit for OD-ECC, 80bit for RL-ECC)
-- Function content: Execute ECC on the codeword to implement error detection or correction of the codeword
-- Function output: Return error information (NE/CE/DUE)
 
 # Getting Started
 - $ make clean
@@ -94,9 +89,6 @@ In such cases, employing the CRC code could be a beneficial method
 - CE: detected and corrected error
 - DUE: detected but uncorrected error
 - SDC: Silent Data Corruption
-- You are free to modify the H_Matrix_OECC.txt and H_Matrix_RECC.txt files
-- Solution file: Chipkill-correct ECC (using RS code)
-- Unity ECC **[5]** can correct all the error scenarios mentioned in this exercise using only RL-ECC, without the need for OD-ECC
 
 # References
 - **[1]** Hamming, Richard W. "Error detecting and error correcting codes." The Bell system technical journal 29.2 (1950): 147-160.
