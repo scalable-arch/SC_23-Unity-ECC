@@ -1,4 +1,4 @@
-# Failure probability in the field
+# Failure probability in the field (Not used in [SC'23] Unity ECC)
 
 # Prerequisite
 - You need to read the Fault-sim (TACO'15) paper **[2]**
