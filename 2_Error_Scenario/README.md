@@ -34,8 +34,8 @@
 - Num of DQ: 4 (x4 chip)
 
 # ECC configuration
-- OD-ECC: No OD-ECC, (136, 128) Hamming SEC code **[1]**
-- RL-ECC: No RL-ECC, [10, 8] Chipkill (using Reed-Solomon code), [10, 8] Unity ECC
+- OD-ECC (2 options): No OD-ECC, (136, 128) Hamming SEC code **[1]**
+- RL-ECC (3 options): No RL-ECC, [10, 8] Chipkill (using Reed-Solomon code), [10, 8] Unity ECC
 
 # Error pattern configuration
 - SE(SBE): per-chip Single Bit Error
@@ -44,9 +44,10 @@
 
 # Error Scenario configuration
 - SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in just one chip, with the remaining 9 chips having no errors
+- SE(SBE)+SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in each of two chips, with the remaining 8 chips having no errors
 - DE(DBE): Among 10 chips, there's a double bit error (DE[Double Bit Error]) occurring in just one chip, with the remaining 9 chips having no errors
 - CHIPKILL(SCE): Among 10 chips, there's a random error (SCE [Single Chip Error]) occurring in just one chip, with the remaining 9 chips having no errors. Errors can occur up to a maximum of 136 bits
-- SE(SBE)+SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in each of two chips, with the remaining 8 chips having no errors
+- ...
 
 # Getting Started
 - $ make clean
@@ -54,7 +55,7 @@
 - $ python run.py
 
 # Answer (.S files)
-Runtime : 1000000
+Runtime : 1000000000
 
 CE : 0.02557000000
 
