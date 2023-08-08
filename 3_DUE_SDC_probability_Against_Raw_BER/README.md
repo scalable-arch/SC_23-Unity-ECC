@@ -38,7 +38,7 @@
 - RL-ECC (3 options): No RL-ECC, [10, 8] Chipkill (using Reed-Solomon code), [10, 8] Unity ECC
 
 # BER scaling
-- 10 ^-9^ ~ 10 ^-2^
+- 10<sup>-9</sup> ~ 10<sup>-2</sup>
 
 # Getting Started
 - $ make clean
