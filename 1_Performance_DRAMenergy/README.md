@@ -1,6 +1,6 @@
 # No Multi-core
 
-- I'm not uploaded Multi-core code (Gem5 + Ramulator)
+- I'm not uploaded Multi-core code **(Gem5 + Ramulator)**
 - It has too large sizes (14GB...)
 
 # Mix-base
@@ -20,24 +20,25 @@
 
 
 # Getting started
-- !!!!!주의!! 일단 첫번째로 다음 경로의 압축을 폴어야 함.
-(1) benchspec/CPU2006에 있는 파일들의 압축을 풀어야 한다 (run.py에 있는 모양대로 나옴!)
+- !!!!!WARNING!! First and foremost, the following path's compression must be unzip
+- You must unzip the files in benchspec/CPU2006 (as it appears in run.py)!
+- Build
+>> $ cd gem5_ramulator
 
-(2) build
+>> $ cd gem5_v20.1_ramulator
 
-- gem5_ramulator
-- gem5_v20.1_ramulator
-- ext/ramulator/Ramulator/src/DDR4.h 수정
-- scons ./build/X86/gem5.opt -j 20
+>> Modify ext/ramulator/Ramulator/src/DDR4.h
 
-(3) DRAM config
+>> $ scons ./build/X86/gem5.opt -j 20
+- DRAM config
+>> Modify DDR4 config
 
-- DDR4 config 수정
-- script/ramulator_config/DDR4.cfg
-- script/gem5_multicore/DDR4_1GB_GEM5_Multicore_backup.cfg
+>> $ cd script/ramulator_config/DDR4.cfg
 
-(4) script 실행
+>> $ cd script/gem5_multicore/DDR4_1GB_GEM5_Multicore_backup.cfg
+- Run script
+>> Execute script
 
-- script 실행
-- python gem5.py -f gem5_multicore/DDR4_1GB_GEM5_Multicore.cfg
-- 결과: script/out/~167.result => active/dram cycle, IPC, request, hit/miss, conflict 등
+>> $ python gem5.py -f gem5_multicore/DDR4_1GB_GEM5_Multicore.cfg
+
+>> Results: script/out/~167.result => active/dram cycle, IPC, request, hit/miss, conflict, etc.
