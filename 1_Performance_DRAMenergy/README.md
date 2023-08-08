@@ -22,8 +22,8 @@
 
 # Getting started
 - !!!!!WARNING!! First and foremost, the following path's compression must be unzip
-- You must unzip the files in benchspec/CPU2006 (as it appears in run.py)!
-- Build
+- (1) You must unzip the files in benchspec/CPU2006 (as it appears in run.py)!
+- (2) Build
 >> $ cd gem5_ramulator
 
 >> $ cd gem5_v20.1_ramulator
@@ -31,13 +31,13 @@
 >> Modify ext/ramulator/Ramulator/src/DDR4.h
 
 >> $ scons ./build/X86/gem5.opt -j 20
-- DRAM config
+- (3) DRAM config
 >> Modify DDR4 config
 
 >> $ cd script/ramulator_config/DDR4.cfg
 
 >> $ cd script/gem5_multicore/DDR4_1GB_GEM5_Multicore_backup.cfg
-- Run script
+- (4) Run script
 >> Execute script
 
 >> $ python gem5.py -f gem5_multicore/DDR4_1GB_GEM5_Multicore.cfg
