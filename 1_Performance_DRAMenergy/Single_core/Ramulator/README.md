@@ -1,3 +1,5 @@
+# Single-core Performance (Ramulator)
+
 - Refer to Ramulator description **[1]** (Ramulator: A DRAM Simulator)
 
 !!!!!WARNING!! First and foremost, you must unzip the files in the cputraces folder (as it appears in run.py)!
