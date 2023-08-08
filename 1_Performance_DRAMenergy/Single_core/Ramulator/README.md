@@ -1,4 +1,4 @@
-# Single-core Performance (Ramulator)
+# Single-core Performance (Ramulator, Figure 7)
 - Refer to Ramulator description **[1]** (Ramulator: A CPU Simulator)
 
 # Getting Started
