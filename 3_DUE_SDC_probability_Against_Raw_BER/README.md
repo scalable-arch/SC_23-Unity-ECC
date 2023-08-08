@@ -8,7 +8,7 @@
 - 2. Setting output function name: ~.S files
 - 3. **(Start loop)** DDR5 ECC-DIMM setup
 - 4. Initialize all data in 10 chips to 0: Each chip has 136 bits of data (128-bit) + redundancy (8-bit).
-- 5. Error injection: Errors occur based on the error scenarios. **(Caution!) This evaluation has no fault!**
+- 5. Error injection: Errors occur based on the BER. **(Caution!) This evaluation has no fault!**
 - 6. Apply OD-ECC **[2]**: Implementation
 >> Apply the Hamming SEC code of (136, 128) to each chip.
 
@@ -37,17 +37,8 @@
 - OD-ECC (2 options): No OD-ECC, (136, 128) Hamming SEC code **[1]**
 - RL-ECC (3 options): No RL-ECC, [10, 8] Chipkill (using Reed-Solomon code), [10, 8] Unity ECC
 
-# Error pattern configuration
-- SE(SBE): per-chip Single Bit Error
-- DE(DBE): per-chip Double Bit Error
-- CHIPKILL(SCE): Single Chip Error (All Random)
-
-# Error Scenario configuration
-- SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in just one chip, with the remaining 9 chips having no errors
-- SE(SBE)+SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in each of two chips, with the remaining 8 chips having no errors
-- DE(DBE): Among 10 chips, there's a double bit error (DE[Double Bit Error]) occurring in just one chip, with the remaining 9 chips having no errors
-- CHIPKILL(SCE): Among 10 chips, there's a random error (SCE [Single Chip Error]) occurring in just one chip, with the remaining 9 chips having no errors. Errors can occur up to a maximum of 136 bits
-- ...
+# BER scaling
+- 10^-9^ ~ 10^-2^
 
 # Getting Started
 - $ make clean
