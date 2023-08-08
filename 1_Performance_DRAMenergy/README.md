@@ -2,6 +2,7 @@
 
 - I'm not uploaded Multi-core code **(Gem5 + Ramulator)**
 - It has too large sizes (14GB...)
+- Below is the description and execution method related to Multi-core
 
 # Mix-base
 - Low (6 applications): bzip2, GCC, dealII, omnetpp, wrf, xalancbmk
