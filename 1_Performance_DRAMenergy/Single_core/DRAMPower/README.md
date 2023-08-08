@@ -12,7 +12,7 @@
 - If you change this location, you can modify and run the run.py file in DRAMPower
 
 
-
+# Detailed explanations
 
 [![Build Status](https://travis-ci.org/ravenrd/DRAMPower.svg?branch=master)](https://travis-ci.org/ravenrd/DRAMPower)
 [![Coverage Status](https://coveralls.io/repos/ravenrd/DRAMPower/badge.png?branch=master)](https://coveralls.io/r/ravenrd/DRAMPower?branch=master)
