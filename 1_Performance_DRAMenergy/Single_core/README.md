@@ -1,4 +1,6 @@
-# Single-core performance (Figure 7)
+# Single-core performance & DRAM energy (Figure 7)
+
+- Implement 
 
 - Refer to Ramulator description **[1]** ([CAL'15] Ramulator: A CPU Simulator)
 - !!!!!WARNING!! First and foremost, you must **unzip the files in the cputraces folder** (as it appears in run.py)!
