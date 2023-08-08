@@ -13,3 +13,6 @@ Results (in this case, it is result/~.txt)
  e.g.) cmd-trace-astar-chan-0-rank.txt
 
 CAUTION!!!! => Consider the Cache configuration (L1L2, L3..), warmup_instr, etc., and adjust accordingly when running!
+
+# References
+- **[1]** https://github.com/CMU-SAFARI/ramulator
