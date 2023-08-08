@@ -9,7 +9,7 @@
 - 3. **(Start loop)** DDR5 ECC-DIMM setup
 - 4. Initialize all data in 10 chips to 0: Each chip has 136 bits of data (128-bit) + redundancy (8-bit).
 - 5. Error injection: Errors occur based on the error scenarios. **(Caution!) This evaluation has no fault!**
-- 6. Apply OD-ECC: Implementation
+- 6. Apply OD-ECC **[2]**: Implementation
 >> Apply the Hamming SEC code of (136, 128) to each chip.
 
 >> After running OD-ECC, the redundancy of OD-ECC does not come out of the chip (128-bit data).
@@ -55,46 +55,18 @@
 - $ python run.py
 
 # Answer (.S files)
-Runtime : 1000000000
-
-CE : 0.02557000000
-
-DUE : 0.00000000000
-
-SDC : 0.97443000000
-
-The above answer serves as an example for OECC_OFF_RECC_OFF.S
-
-**Errors can be injected randomly, thus there may be slight discrepancies each time it is executed**
-
-The procedure involves injecting errors a million times to illustrate the probabilities of CE, DUE, and SDC occurrences
-
-A high CE and a low SDC are desirable
-
-Strive to achieve a CE of 1.000000000 (100% error correction) as exhibited in **OECC_ON_RECC_ON.S**
-
-However, if a CE of 100% is not attainable, the primary objective should be to reduce the SDC
-
-In such cases, employing the CRC code could be a beneficial method
-
-# Hint
-- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection **[1]**
-- The codeword is in the default all-zero state (No-error state). In other words, the original message is all-zero
-- Thus, **you only need to create a decoding function**; there's no need to encode
-- Reason: Because it's a Linear code, the same syndrome appears regardless of 1->0 or 0->1 error at the same location.
-- Shortened code
-- Ex) (255, 253) RS SSC (Single Symbol Correcting) code over GF(256) -> (10,8) RS SSC code over GF(256)
+- Errors can be injected randomly, thus there may be slight discrepancies each time it is executed
   
 # Additional Information
 - NE: no error
 - CE: detected and corrected error
 - DUE: detected but uncorrected error
 - SDC: Silent Data Corruption
+- The codeword is in the default all-zero state (No-error state). In other words, the original message is all-zero
+- Thus, there's no need to encode
+- Reason: Because it's a Linear code, the same syndrome appears regardless of 1->0 or 0->1 error at the same location
 
 # References
 - **[1]** Hamming, Richard W. "Error detecting and error correcting codes." The Bell system technical journal 29.2 (1950): 147-160.
 - **[2]** M. JEDEC. 2022. DDR5 SDRAM standard, JESD79-5B𝑣 1.20.
-- **[3]** Song, Yuseok, et al. "SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection." IEEE Access 10 (2022): 89769-89780.
-- **[4]** Kwon, Kiheon, et al. "EPA ECC: Error-Pattern-Aligned ECC for HBM2E." 2023 38th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC). IEEE, 2023.
-- **[5]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection Against Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
 
