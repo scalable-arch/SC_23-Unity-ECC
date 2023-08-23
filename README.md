@@ -16,7 +16,7 @@ Paper URL: **(to be updated later)**
 # 1_Performance_DRAMenergy
 - Figure 7
 - **Figure 8** (Multi-core) is **not uploaded!** (too large size! 3GB)
-- **Updated after publication! Ramulator2 supports DDR5 (https://github.com/CMU-SAFARI/ramulator2)**
+- ## **Updated after publication! Ramulator2 supports DDR5 (https://github.com/CMU-SAFARI/ramulator2)**
 
 # 2_Error_Scenario
 - Table 4
