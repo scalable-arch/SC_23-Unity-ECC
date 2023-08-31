@@ -19,6 +19,10 @@
 - ('H') mix8: wrf, mcf, cactusADM, libquantum
 - ('H') mix9: mcf, cactusADM, leslie3d, libquantum
 
+# Method of measuring IPC (4-core)
+- Calculated the IPC for each of the 4-cores and then took the average of the 4 IPCs.
+- Note! It's not the sum of the instructions for the 4-cores divided by the number of cycles!
+- It calculates the IPC for each core and then takes the average.
 
 # Getting started
 - !!!!!WARNING!! First and foremost, the following path's compression must be unzip
