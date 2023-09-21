@@ -12,7 +12,7 @@ Paper title: [SC'23] Unity ECC: Unified Memory Protection Against Bit and Chip E
 Paper URL: **(to be updated later)**
 
 # Overview
-![A comparison of conventional and Unity ECC](https://github.com/xyz123479/SC_23_Unity-ECC/blob/main/Unity%20ECC.png)
+![A comparison of conventional and Unity ECC](https://github.com/scalable-arch/SC_23_Unity-ECC/blob/main/Unity%20ECC.png)
 
 # 1_Performance_DRAMenergy
 - Figure 7
