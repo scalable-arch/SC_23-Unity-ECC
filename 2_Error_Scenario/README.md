@@ -1,7 +1,7 @@
 # Error_Scenario (Table 4)
 
 # Overview
-![An Overview of the evaluation](https://github.com/scalable-arch/SC_23_Unity-ECC/blob/main/2_Error_Scenario/DDR5%20OD-ECC%20%26%20RL-ECC.png)
+![An Overview of the evaluation](https://github.com/scalable-arch/SC_23-Unity-ECC/blob/main/2_Error_Scenario/DDR5%20OD-ECC%20%26%20RL-ECC.png)
 
 # Code flows (Fault_sim.cpp)
 - 1. Reading H-Matrix.txt (OD-ECC)
