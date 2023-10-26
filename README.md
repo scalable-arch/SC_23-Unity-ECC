@@ -1,5 +1,7 @@
 # SC_23-Unity ECC
 
+# This project is licensed under the terms of the MIT license
+
 # Author
 
 **Dongwhee Kim**
