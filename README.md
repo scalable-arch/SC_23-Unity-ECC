@@ -11,7 +11,7 @@
 
 Paper title: [SC'23] Unity ECC: Unified Memory Protection Against Bit and Chip Errors
 
-Paper URL: **(to be updated later)**
+Paper URL: https://dl.acm.org/doi/abs/10.1145/3581784.3607081
 
 # Overview
 ![A comparison of conventional and Unity ECC](https://github.com/scalable-arch/SC_23_Unity-ECC/blob/main/Unity%20ECC.png)
