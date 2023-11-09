@@ -32,3 +32,7 @@ Paper URL: https://dl.acm.org/doi/abs/10.1145/3581784.3607081
 
 # Not_used_Failure_probability_in_the_field
 - Not used in this paper! 
+
+# Optional (H_Matrix_Unity.txt)
+- A binary representation of the (10, 8) SSC-DEC (Single Symbol Correction-Double Error Correction) **H-matrix**, which has the characteristics of Unity ECC.
+- In the paper, we conducted an experiment by expressing it as an H-matrix in the form of a symbol, but we believe that it will be more **convenient for those who have difficulty using RS-code to use the H-matrix.**
