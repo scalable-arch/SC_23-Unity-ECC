@@ -30,6 +30,9 @@ Paper URL: https://dl.acm.org/doi/abs/10.1145/3581784.3607081
 # 4_hardware_overhead_synthesis
 - Table 4
 
+# Algorithm1_H_Matrix_Construction
+- Algorithm 1
+
 # Not_used_Failure_probability_in_the_field
 - Not used in this paper! 
 
