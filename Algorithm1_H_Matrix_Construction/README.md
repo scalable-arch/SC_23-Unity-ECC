@@ -1,7 +1,7 @@
 # Code Construction (Algorithm 1)
 
 # Overview
-![An Overview of the Algorithm](https://github.com/xyz123479/SC_23-Unity-ECC/blob/main/Algorithm1_H_Matrix_Construction/Unity%20ECC_Algorithm1.PNG)
+![An Overview of the Algorithm](https://github.com/scalable-arch/SC_23-Unity-ECC/blob/main/Algorithm1_H_Matrix_Construction/Unity%20ECC_Algorithm1.PNG)
 
 # Code flows (DFS_based_SSC_DEC.cpp)
 - Parallel execution in 20 positions
