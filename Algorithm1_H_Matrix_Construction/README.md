@@ -1,7 +1,7 @@
 # Code Construction (Algorithm 1)
 
 # Overview
-![An Overview of the evaluation](https://github.com/xyz123479/SC_23_Unity-ECC/blob/main/2_Error_Scenario/DDR5%20OD-ECC%20%26%20RL-ECC.png)
+![An Overview of the Algorithm](https://github.com/xyz123479/SC_23-Unity-ECC/blob/main/Algorithm1_H_Matrix_Construction/Unity%20ECC_Algorithm1.PNG)
 
 # Code flows (DFS_based_SSC_DEC.cpp)
 - 1. Parallel execution in 20 positions
