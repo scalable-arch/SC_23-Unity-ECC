@@ -15,7 +15,9 @@
 # Answer (.txt files)
 - Indicates the exponents of each column of the H-matrix
 - **Ex)** column index (0~254) : 1, 0, 25, 39, 63, 108, 141, 184, 215, 230 'and' **prim_num=4 (x<sup>8</sup> + x<sup>6</sup> + x<sup>4</sup> + x<sup>3</sup> + x<sup>2</sup> + x + 1) [GF_2^8__primitive_polynomial.txt]**
-- It represents the exponent of each column of the H-matrix
+- **Prim_num** code part example -> first_row = primitive_poly_GF_2_8[**4**][(column+iter)%255]; // a^i
+- **Prim_num** code part example -> second_row = primitive_poly_GF_2_8[**4**][(2*column+iter)%255]; // a^2i
+- '1, 0, 25, 39, 63, 108, 141, 184, 215, 230' represents the exponent of each column of the H-matrix
 - Since SSC-DEC is independent of the order of columns, **it is possible to change the positions between columns**
 - For the creation of a systematic code, the first two columns were fixed as an Identity matrix, and after the code construction, they were moved to the back of the H-matrix.
 - **H-Matrix row 1: a^25, a^39, a^63,  a^108, a^141, a^184, a^215, a^230, a^0, 0**
