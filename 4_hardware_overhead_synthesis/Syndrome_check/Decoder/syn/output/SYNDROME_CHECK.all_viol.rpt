@@ -1,0 +1,37 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : SYNDROME_CHECK
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  6 23:34:23 2023
+****************************************
+
+
+    Net: error_flag00/N14
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Design: SYNDROME_CHECK
+
+    max_area           0.0000000000
+  - Current Area       424.3679809570
+  ------------------------------
+    Slack              -424.3679809570  (VIOLATED)
+
+
+    Design: SYNDROME_CHECK
+
+    max_leakage_power      0.0000000000
+  - Current Leakage Power  59659.9687500000
+  ----------------------------------
+    Slack                  -59659.9687500000  (VIOLATED)
+
+
+1

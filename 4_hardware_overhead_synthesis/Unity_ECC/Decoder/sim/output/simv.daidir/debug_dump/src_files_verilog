@@ -1,0 +1,10 @@
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/DECISION.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/DE_CORRECTOR.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/ERROR_LOCATION.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/GFDIV.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/GFEXP.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/GFMULT.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/SYNDROME_GENERATOR.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/rtl/UNITY_DECODER.sv
+/home/xyz123479/verilog/Unity_ECC/Decoder/sim/tb/TB_testbench.sv

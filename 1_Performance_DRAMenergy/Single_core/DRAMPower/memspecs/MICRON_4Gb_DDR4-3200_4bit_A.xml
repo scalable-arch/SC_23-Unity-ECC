@@ -1,0 +1,63 @@
+<!DOCTYPE memspec SYSTEM "memspec.dtd">
+<memspec>
+<!-- Micron Rev.B DDR4-4Gb-3200_x4 -->
+  <parameter id="memoryId" type="string" value="MICRON_4Gb_DDR4-3200_4bit_A" />
+  <parameter id="memoryType" type="string" value="DDR4" />
+  <memarchitecturespec>
+    <parameter id="width" type="uint" value="4" />
+    <parameter id="nbrOfBankGroups" type="uint" value="4" />
+    <parameter id="nbrOfBanks" type="uint" value="16" />
+    <parameter id="nbrOfRanks" type="uint" value="1" />
+    <parameter id="nbrOfColumns" type="uint" value="1024" />
+    <parameter id="nbrOfRows" type="uint" value="65536" />
+    <parameter id="dataRate" type="uint" value="2" />
+    <parameter id="burstLength" type="uint" value="8" />
+  </memarchitecturespec>
+  <memtimingspec> <!-- Micron Rev.B DDR4-4Gb-3200_x4 -->
+      <parameter id="clkMhz" type="double" value="1600" />
+      <parameter id="REFI" type="uint" value="0" />
+      <parameter id="RFC" type="uint" value="0" />
+      <parameter id="RL" type="uint" value="22" />
+      <parameter id="WL" type="uint" value="22" />
+      <parameter id="CL" type="uint" value="22" />
+      <parameter id="AL" type="uint" value="0" />
+      <parameter id="RP" type="uint" value="22" />
+      <parameter id="RAS" type="uint" value="52" />
+      <parameter id="RCD" type="uint" value="22" />
+      <parameter id="RC" type="uint" value="74" />
+      <parameter id="FAW" type="uint" value="40" />
+      <parameter id="RTP" type="uint" value="12" />
+      <parameter id="WR" type="uint" value="24" />
+      <parameter id="RRD_S" type="uint" value="8" />
+      <parameter id="RRD_L" type="uint" value="10" />
+      <parameter id="CCD_S" type="uint" value="4" />
+      <parameter id="CCD_L" type="uint" value="8" />
+      <parameter id="CCD_L_WR" type="uint" value="16" />
+      <parameter id="WTR_S" type="uint" value="4" />
+      <parameter id="WTR_L" type="uint" value="12" />
+      <parameter id="DQSCK" type="uint" value="2" />
+      <parameter id="XP" type="uint" value="10" />
+      <parameter id="XPDLL" type="uint" value="0" />
+      <parameter id="XS" type="uint" value="0" />
+      <parameter id="XSDLL" type="uint" value="0" />
+      <parameter id="CKE" type="uint" value="6" />
+      <parameter id="CKESR" type="uint" value="8" />
+  </memtimingspec>
+  <mempowerspec> <!-- Micron Rev.B DDR4-4Gb-3200_x4 -->
+      <parameter id="idd0" type="double" value="64.0" /> <!-- IDD0 -->
+      <parameter id="idd02" type="double" value="4.0" /> <!-- IPP0 -->
+      <parameter id="idd2p0" type="double" value="23.0" /> <!-- IDD2P -->
+      <parameter id="idd2p1" type="double" value="23.0" /> <!-- IDD2P -->
+      <parameter id="idd2n" type="double" value="46.0" /> <!-- IDD2N -->
+      <parameter id="idd3p0" type="double" value="35.0" /> <!-- IDD3P -->
+      <parameter id="idd3p1" type="double" value="35.0" /> <!-- IDD3P -->
+      <parameter id="idd3n" type="double" value="63.0" /> <!-- IDD3N -->
+      <parameter id="idd4r" type="double" value="170.0" /> <!-- IDD4R -->
+      <parameter id="idd4w" type="double" value="145.0" /> <!-- IDD4W -->
+      <parameter id="idd5" type="double" value="118.0" /> <!-- IDD5B -->
+      <parameter id="idd6" type="double" value="24.0" /> <!-- IDD6N -->
+      <parameter id="idd62" type="double" value="2.6" /> <!-- Should be equal to IPP6N-->
+      <parameter id="vdd" type="double" value="1.2" /> <!-- VDD -->
+      <parameter id="vdd2" type="double" value="2.5" /> <!-- VPP -->
+  </mempowerspec>
+</memspec>

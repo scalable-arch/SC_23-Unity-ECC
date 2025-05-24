@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : reference
+Design : SYNDROME_CHECK
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  6 23:34:23 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STQ_EN2_4          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  3.024000      15     45.359999  
+STQ_EN2_6          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  4.536000       1      4.536000  
+STQ_EN2_8          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  5.880000       1      5.880000  
+STQ_EN2_S_1        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000      11     16.632000  
+STQ_EN2_S_2        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.680000      20     33.599999  
+STQ_EN3_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.184000       4      8.736000  
+STQ_EN3_3          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  4.032000       8     32.256001  
+STQ_EO2_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000       6      9.072000  
+STQ_EO2_S_2        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000      33     49.895999  
+STQ_EO2_S_4        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.688000       1      2.688000  
+STQ_EO3_0P5        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000      10     15.120000  
+STQ_EO3_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.184000      32     69.888000  
+STQ_EO3_2          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.688000      31     83.327999  
+STQ_EO3_3          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  4.200000       9     37.799998  
+STQ_INV_S_0P65     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       2      0.672000  
+STQ_INV_S_1        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       6      2.016000  
+STQ_ND4_MM_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STQ_NR3B_MG_2      um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.344000       1      1.344000  
+STQ_NR4_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+STQ_NR4_2          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000       2      3.024000  
+STQ_OR2_2          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.840000       1      0.840000  
+-----------------------------------------------------------------------------
+Total 21 references                                   424.367994
+1

@@ -1,0 +1,77 @@
+* Parsing memspecs/MICRON_16Gb_DDR4-4800_4bit_A.xml
+* Analysis start time: Tue Apr  4 21:17:07 2023
+* Analyzing the input trace
+* Bankwise mode: disabled
+* Partial Array Self-Refresh: disabled
+
+* Trace Details:
+
+#ACT commands: 4135
+#RD + #RDA commands: 27160
+#WR + #WRA commands: 0
+#PRE (+ PREA) commands: 4135
+#REF commands: 2443
+#REFB commands: 0
+#Active Cycles: 6538177
+  #Active Idle Cycles: 4442878
+  #Active Power-Up Cycles: 0
+    #Auto-Refresh Active cycles during Self-Refresh Power-Up: 0
+#Precharged Cycles: 23950462
+  #Precharged Idle Cycles: 23824633
+  #Precharged Power-Up Cycles: 0
+    #Auto-Refresh Precharged cycles during Self-Refresh Power-Up: 0
+  #Self-Refresh Power-Up Cycles: 0
+Total Idle Cycles (Active + Precharged): 28267511
+#Power-Downs: 0
+  #Active Fast-exit Power-Downs: 0
+  #Active Slow-exit Power-Downs: 0
+  #Precharged Fast-exit Power-Downs: 0
+  #Precharged Slow-exit Power-Downs: 0
+#Power-Down Cycles: 0
+  #Active Fast-exit Power-Down Cycles: 0
+  #Active Slow-exit Power-Down Cycles: 0
+    #Auto-Refresh Active cycles during Self-Refresh: 0
+  #Precharged Fast-exit Power-Down Cycles: 0
+  #Precharged Slow-exit Power-Down Cycles: 0
+    #Auto-Refresh Precharged cycles during Self-Refresh: 0
+#Auto-Refresh Cycles: 0
+#Self-Refreshes: 0
+#Self-Refresh Cycles: 0
+----------------------------------------
+Total Trace Length (clock cycles): 30488639
+----------------------------------------
+
+* Trace Power and Energy Estimates:
+
+ACT Cmd Energy: -3780940.62 pJ
+PRE Cmd Energy: 1780634.38 pJ
+RD Cmd Energy: 17527253.33 pJ
+WR Cmd Energy: 0.00 pJ
+RD I/O Energy: 1339893.33 pJ
+WR Termination Energy: 0.00 pJ
+ACT Stdby Energy: 425526353.08 pJ
+  Active Idle Energy: 289157309.83 pJ
+  Active Power-Up Energy: 0.00 pJ
+    Active Stdby Energy during Auto-Refresh cycles in Self-Refresh Power-Up: 0.00 pJ
+PRE Stdby Energy: 1009911147.67 pJ
+  Precharge Idle Energy: 1004605358.17 pJ
+  Precharged Power-Up Energy: 0.00 pJ
+    Precharge Stdby Energy during Auto-Refresh cycles in Self-Refresh Power-Up: 0.00 pJ
+  Self-Refresh Power-Up Energy: 0.00 pJ
+Total Idle Energy (Active + Precharged): 1293762668.00 pJ
+Total Power-Down Energy: 0.00 pJ
+  Fast-Exit Active Power-Down Energy: 0.00 pJ
+  Slow-Exit Active Power-Down Energy: 0.00 pJ
+    Slow-Exit Active Power-Down Energy during Auto-Refresh cycles in Self-Refresh: 0.00 pJ
+  Fast-Exit Precharged Power-Down Energy: 0.00 pJ
+  Slow-Exit Precharged Power-Down Energy: 0.00 pJ
+    Slow-Exit Precharged Power-Down Energy during Auto-Refresh cycles in Self-Refresh: 0.00 pJ
+Auto-Refresh Energy: 0.00 pJ
+Bankwise-Refresh Energy: 0.00 pJ
+Self-Refresh Energy: 0.00 pJ
+----------------------------------------
+Total Trace Energy: 1452304341.17 pJ
+Average Power: 114.32 mW
+----------------------------------------
+* Power Computation End time: Tue Apr  4 21:17:07 2023
+* Total Simulation time: 0.072014 seconds
