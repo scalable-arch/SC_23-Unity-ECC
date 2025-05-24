@@ -1,7 +1,0 @@
-+incdir+$ROOT_PATH/rtl
-
--sverilog
-$ROOT_PATH/rtl/SYNDROME_CHECK.sv
-$ROOT_PATH/rtl/GFMULT.sv
-$ROOT_PATH/rtl/SYNDROME_GENERATOR.sv
-$ROOT_PATH/rtl/ERROR_FLAG.sv
